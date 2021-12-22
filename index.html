@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>password</title>
+	<script>
+		function checkpassword () {
+			var password= document.getElementById("passwordbox");
+			var passwordText = password.value;
+			if(passwordText=="ILoveLego"){
+				return true;
+			}
+			else {
+				alert("Access Denied")
+				return false;
+			}
+
+		}
+	</script>
+</head>
+<body>
+<p style="font-size:50px;"> Welcome </p>
+<p> Please enter the password to view the following website </p>
+<p> password: <input id="passwordbox" type="password"> </p>
+<a href ="Brickypage1.html" onclick="return checkpassword();"> Click here to submit password and view the website </a>
+</body>
+</html>
